@@ -110,4 +110,7 @@
     <property name="transactionManager" ref="platformTxManager" />
   </bean>
 
+  <!-- ensure database bundle is started already-->
+  <osgi:reference id="databasebundle" interface="org.fusesource.example.transactions.database.DatabaseBundleMarker" />
+
 </beans>
